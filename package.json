@@ -2,9 +2,10 @@
   "name": "werk85-tslint-rules",
   "version": "1.0.0",
   "description": "Organisation wide tslint rules for werk85",
-  "main": "tslint-base.json",
+  "main": "lib/tslint-base.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/werk85/tslint-rules/issues"
   },
-  "homepage": "https://github.com/werk85/tslint-rules#readme"
+  "homepage": "https://github.com/werk85/tslint-rules#readme",
+  "dependencies": {
+    "codelyzer": "2.0.0-beta.4",
+    "tslint-eslint-rules": "3.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "6.0.58",
+    "typescript": "2.1.4"
+  }
 }
