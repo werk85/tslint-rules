@@ -1,0 +1,24 @@
+{
+  "name": "werk85-tslint-rules",
+  "version": "1.0.0",
+  "description": "Organisation wide tslint rules for werk85",
+  "main": "tslint-base.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werk85/tslint-rules.git"
+  },
+  "keywords": [
+    "werk85",
+    "tslint",
+    "rules"
+  ],
+  "author": "Malte Legenhausen <legenhausen@werk85.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/werk85/tslint-rules/issues"
+  },
+  "homepage": "https://github.com/werk85/tslint-rules#readme"
+}
