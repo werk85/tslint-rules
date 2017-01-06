@@ -31,29 +31,29 @@ For Angular 2 based project use the `werk85-tslint-rules/lib/tslint-angular2` vi
 
 ```json
 {
-  "extends": "werk85-tslint-rules/tslint-angular2",
+  "extends": "werk85-tslint-rules/lib/tslint-angular2",
   "rules": {
     "directive-selector": [
       true,
       "attribute",
-      "w85", // Prefix used by directives
+      "w85",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "w85", // Prefix used by components
+      "w85",
       "kebab-case"
     ],
     "pipe-naming": [
       true,
       "camelCase",
-      "w85" // Prefix used by pipes
+      "w85"
     ],
   }
 }
 ```
 
-**Note:** You have to define the appropriate directive, component and pipe prefix by yourself.
+**Note:** You have to define the appropriate directive, component and pipe prefix by yourself. Please replace the `"w85"` string by an appropriate shortcut for your project.
 
 This configuration uses the [codelyzer](https://github.com/mgechev/codelyzer) tslint rules and extends the "Base Rules" described above.
