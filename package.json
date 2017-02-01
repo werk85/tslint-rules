@@ -27,7 +27,7 @@
     "tslint-eslint-rules": "3.2.3"
   },
   "devDependencies": {
-    "@types/node": "6.0.58",
-    "typescript": "2.1.4"
+    "@types/node": "7.0.4",
+    "typescript": "2.1.5"
   }
 }

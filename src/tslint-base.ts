@@ -25,10 +25,10 @@ export const rules = {
   "promise-function-async": true,
   "typedef": [
     true,
-    "arrow-parameter",
-    "member-variable-declaration",
+    "call-signature",
+    "parameter",
     "property-declaration",
-    "variable-declaration"
+    "member-variable-declaration"
   ],
   "typedef-whitespace": [
     true,
@@ -76,7 +76,7 @@ export const rules = {
   "no-unused-new": true,
   "no-use-before-declare": true,
   "no-var-keyword": true,
-  "no-void-expression": true,
+  "no-void-expression": false,
   "radix": true,
   "restrict-plus-operands": true,
   "strict-boolean-expressions": false,
@@ -126,7 +126,7 @@ export const rules = {
   ],
   "array-type": [
     true,
-    "array-simple"
+    "array"
   ],
   "arrow-parens": true,
   "callable-types": true,
