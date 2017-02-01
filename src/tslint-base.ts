@@ -126,7 +126,7 @@ export const rules = {
   ],
   "array-type": [
     true,
-    "array-simple"
+    "array"
   ],
   "arrow-parens": true,
   "callable-types": true,
