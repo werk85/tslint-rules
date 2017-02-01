@@ -1,6 +1,6 @@
 {
   "name": "werk85-tslint-rules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Organisation wide tslint rules for werk85",
   "main": "lib/tslint-base.js",
   "scripts": {
