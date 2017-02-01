@@ -76,7 +76,7 @@ export const rules = {
   "no-unused-new": true,
   "no-use-before-declare": true,
   "no-var-keyword": true,
-  "no-void-expression": true,
+  "no-void-expression": false,
   "radix": true,
   "restrict-plus-operands": true,
   "strict-boolean-expressions": false,
