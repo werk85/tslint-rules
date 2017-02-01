@@ -8,36 +8,36 @@ export const rulesDirectory = [
 ];
 
 export const rules = {
-  "directive-selector": [
+  'component-class-suffix': true,
+  'component-selector': [
     true,
-    "attribute",
-    "w85",
-    "camelCase"
+    'element',
+    'w85',
+    'kebab-case'
   ],
-  "component-selector": [
+  'directive-class-suffix': true,
+  'directive-selector': [
     true,
-    "element",
-    "w85",
-    "kebab-case"
+    'attribute',
+    'w85',
+    'camelCase'
   ],
-  "use-input-property-decorator": true,
-  "use-output-property-decorator": true,
-  "use-host-property-decorator": true,
-  "no-attribute-parameter-decorator": true,
-  "no-input-rename": true,
-  "no-output-rename": true,
-  "no-forward-ref": true,
-  "use-life-cycle-interface": true,
-  "use-pipe-transform-interface": true,
-  "pipe-naming": [
+  'import-destructuring-spacing': true,
+  'invoke-injectable': true,
+  'no-access-missing-member': true,
+  'no-attribute-parameter-decorator': true,
+  'no-forward-ref': true,
+  'no-input-rename': true,
+  'no-output-rename': true,
+  'pipe-naming': [
     true,
-    "camelCase",
-    "w85"
+    'camelCase',
+    'w85'
   ],
-  "component-class-suffix": true,
-  "directive-class-suffix": true,
-  "import-destructuring-spacing": true,
-  "templates-use-public": true,
-  "no-access-missing-member": true,
-  "invoke-injectable": true
+  'templates-use-public': true,
+  'use-host-property-decorator': true,
+  'use-input-property-decorator': true,
+  'use-life-cycle-interface': true,
+  'use-output-property-decorator': true,
+  'use-pipe-transform-interface': true
 };

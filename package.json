@@ -5,7 +5,8 @@
   "main": "lib/tslint-base.js",
   "scripts": {
     "start": "tsc",
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "lint": "tslint --project tsconfig.json --type-check --format stylish"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "7.0.4",
+    "tslint": "4.4.2",
     "typescript": "2.1.5"
   }
 }
