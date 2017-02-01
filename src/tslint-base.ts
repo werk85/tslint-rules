@@ -25,10 +25,10 @@ export const rules = {
   "promise-function-async": true,
   "typedef": [
     true,
-    "arrow-parameter",
-    "member-variable-declaration",
+    "call-signature",
+    "parameter",
     "property-declaration",
-    "variable-declaration"
+    "member-variable-declaration"
   ],
   "typedef-whitespace": [
     true,
