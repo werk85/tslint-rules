@@ -46,7 +46,7 @@ export const rules = {
   'eofline': true,
   'file-header': [false],
   'forin': true,
-  'import-blacklist': ['rxjs', 'lodash'],
+  'import-blacklist': [true, 'rxjs', 'lodash'],
   'import-spacing': true,
   'indent': false,
   'interface-name': [
