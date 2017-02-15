@@ -191,10 +191,7 @@ export const rules = {
   ],
   'strict-boolean-expressions': false,
   'switch-default': true,
-  'ter-arrow-body-style': [
-    true,
-    'as-needed'
-  ],
+  'ter-arrow-body-style': false,
   'ter-arrow-spacing': [true],
   'ter-indent': [
     true,
