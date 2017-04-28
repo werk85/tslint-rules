@@ -9,12 +9,7 @@ export const rulesDirectory = [
 ];
 
 export const rules = {
-  'align': [
-    true,
-    'parameters',
-    'arguments',
-    'statements'
-  ],
+  'align': [false],
   'array-bracket-spacing': [
     true,
     'never'
@@ -32,11 +27,7 @@ export const rules = {
   'brace-style': false,
   'callable-types': true,
   'class-name': true,
-  'comment-format': [
-    true,
-    'check-space',
-    'check-uppercase'
-  ],
+  'comment-format': [false],
   'completed-docs': [false],
   'curly': false,
   'cyclomatic-complexity': [
@@ -54,16 +45,13 @@ export const rules = {
     'never-prefix'
   ],
   'interface-over-type-literal': true,
-  'jsdoc-format': true,
+  'jsdoc-format': false,
   'label-position': true,
   'linebreak-style': [
     true,
     'LF'
   ],
-  'max-classes-per-file': [
-    true,
-    1
-  ],
+  'max-classes-per-file': [false],
   'max-file-line-count': [false],
   'max-line-length': [
     true,
@@ -135,7 +123,6 @@ export const rules = {
   'no-unexpected-multiline': true,
   'no-unsafe-finally': true,
   'no-unused-expression': true,
-  'no-unused-new': true,
   'no-use-before-declare': true,
   'no-var-keyword': true,
   'no-var-requires': false,
