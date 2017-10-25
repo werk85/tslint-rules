@@ -1,6 +1,5 @@
 import * as path from 'path';
 
-const identSize = 2;
 const maxCyclomaticComplexity = 20;
 const maxLineLength = 130;
 
@@ -20,6 +19,7 @@ export const rules = {
   ],
   'arrow-parens': true,
   'ban': [],
+  'binary-expression-operand-order': true,
   'block-spacing': [
     true,
     'always'
@@ -34,12 +34,13 @@ export const rules = {
     true,
     maxCyclomaticComplexity
   ],
+  'encoding': true,
   'eofline': true,
   'file-header': [false],
   'forin': true,
   'import-blacklist': [true, 'rxjs', 'lodash'],
   'import-spacing': true,
-  'indent': false,
+  'indent': [true, 'spaces', 2],
   'interface-name': [
     true,
     'never-prefix'
@@ -79,6 +80,7 @@ export const rules = {
   'no-debugger': true,
   'no-default-export': true,
   'no-duplicate-case': true,
+  'no-duplicate-imports': true,
   'no-duplicate-variable': true,
   'no-empty': true,
   'no-empty-character-class': true,
@@ -94,9 +96,10 @@ export const rules = {
     'functions'
   ],
   'no-invalid-regexp': true,
+  'no-invalid-template-strings': true,
   'no-invalid-this': true,
   'no-irregular-whitespace': true,
-  'no-magic-numbers': true,
+  'no-magic-numbers': false,
   'no-mergeable-namespace': true,
   'no-multi-spaces': [
     true,
@@ -114,19 +117,22 @@ export const rules = {
   'no-reference': true,
   'no-regex-spaces': true,
   'no-require-imports': false,
-  'no-shadowed-variable': true,
+  'no-shadowed-variable': false,
   'no-sparse-arrays': true,
   'no-string-literal': true,
   'no-string-throw': true,
+  'no-submodule-imports': false,
   'no-switch-case-fall-through': true,
   'no-trailing-whitespace': true,
   'no-unexpected-multiline': true,
   'no-unsafe-finally': true,
   'no-unused-expression': true,
+  'no-unused-variable': true,
   'no-use-before-declare': true,
   'no-var-keyword': true,
   'no-var-requires': false,
   'no-void-expression': false,
+  'number-literal-format': true,
   'object-curly-spacing': [
     true,
     'always'
@@ -154,6 +160,7 @@ export const rules = {
     'allow-declarations'
   ],
   'ordered-imports': true,
+  'prefer-conditional-expression': true,
   'prefer-const': true,
   'prefer-for-of': true,
   'promise-function-async': true,
@@ -162,7 +169,7 @@ export const rules = {
     'single'
   ],
   'radix': true,
-  'restrict-plus-operands': true,
+  'restrict-plus-operands': false,
   'semicolon': [
     true,
     'always'
@@ -176,14 +183,11 @@ export const rules = {
       named: 'never'
     }
   ],
+  'space-within-parens': 0,
   'strict-boolean-expressions': false,
   'switch-default': true,
   'ter-arrow-body-style': false,
   'ter-arrow-spacing': [true],
-  'ter-indent': [
-    true,
-    identSize
-  ],
   'ter-max-len': false,
   'ter-prefer-arrow-callback': [true],
   'trailing-comma': [
