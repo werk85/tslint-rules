@@ -1,6 +1,6 @@
 {
   "name": "werk85-tslint-rules",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Organisation wide tslint rules for werk85",
   "main": "lib/tslint-base.js",
   "scripts": {
@@ -24,16 +24,16 @@
   },
   "homepage": "https://github.com/werk85/tslint-rules#readme",
   "dependencies": {
-    "@angular/compiler": "4.4.6",
-    "@angular/core": "4.4.6",
-    "codelyzer": "3.2.2",
-    "rxjs": "5.5.1",
+    "@angular/compiler": "5.0.3",
+    "@angular/core": "5.0.3",
+    "codelyzer": "4.0.1",
+    "rxjs": "5.5.2",
     "tslint-eslint-rules": "4.1.1",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@types/node": "8.0.47",
+    "@types/node": "8.0.53",
     "tslint": "5.8.0",
-    "typescript": "2.5.3"
+    "typescript": "2.6.1"
   }
 }
