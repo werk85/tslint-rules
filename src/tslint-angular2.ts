@@ -8,14 +8,27 @@ export const rulesDirectory = [
 ];
 
 export const rules = {
-  'component-class-suffix': true,
+  'angular-whitespace': [
+    true,
+    'check-interpolation',
+    'check-semicolon'
+  ],
+  'banana-in-box': true,
+  'component-class-suffix': [
+    true,
+    'Component',
+    'Container'
+  ],
   'component-selector': [
     true,
     'element',
     'w85',
     'kebab-case'
   ],
-  'directive-class-suffix': true,
+  'directive-class-suffix': [
+    true,
+    'Directive'
+  ],
   'directive-selector': [
     true,
     'attribute',
@@ -23,21 +36,21 @@ export const rules = {
     'camelCase'
   ],
   'import-destructuring-spacing': true,
-  'invoke-injectable': true,
-  'no-access-missing-member': true,
   'no-attribute-parameter-decorator': true,
   'no-forward-ref': true,
   'no-input-rename': true,
-  'no-output-rename': true,
+  'no-output-on-prefix': true,
+  'no-output-rename': false,
+  'pipe-impure': true,
   'pipe-naming': [
     true,
     'camelCase',
     'w85'
   ],
-  'templates-use-public': true,
   'use-host-property-decorator': true,
   'use-input-property-decorator': true,
   'use-life-cycle-interface': true,
   'use-output-property-decorator': true,
-  'use-pipe-transform-interface': true
+  'use-pipe-transform-interface': true,
+  'use-view-encapsulation': true
 };
