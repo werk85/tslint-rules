@@ -90,7 +90,7 @@ export const rules = {
   'no-extra-boolean-cast': true,
   'no-extra-semi': true,
   'no-for-in-array': true,
-  'no-inferred-empty-object-type': true,
+  'no-inferred-empty-object-type': false,
   'no-inner-declarations': [
     true,
     'functions'
