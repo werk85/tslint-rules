@@ -90,7 +90,7 @@ export const rules = {
   'no-extra-boolean-cast': true,
   'no-extra-semi': true,
   'no-for-in-array': true,
-  'no-inferred-empty-object-type': true,
+  'no-inferred-empty-object-type': false,
   'no-inner-declarations': [
     true,
     'functions'
@@ -163,7 +163,7 @@ export const rules = {
   'prefer-conditional-expression': true,
   'prefer-const': true,
   'prefer-for-of': true,
-  'promise-function-async': true,
+  'promise-function-async': false,
   'quotemark': [
     true,
     'single'
@@ -222,7 +222,6 @@ export const rules = {
       'variable-declaration': 'onespace'
     }
   ],
-  'typeof-compare': true,
   'unified-signatures': true,
   'use-isnan': true,
   'valid-jsdoc': false,
