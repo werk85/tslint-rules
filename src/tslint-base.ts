@@ -222,7 +222,6 @@ export const rules = {
       'variable-declaration': 'onespace'
     }
   ],
-  'typeof-compare': true,
   'unified-signatures': true,
   'use-isnan': true,
   'valid-jsdoc': false,
