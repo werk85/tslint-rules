@@ -163,7 +163,7 @@ export const rules = {
   'prefer-conditional-expression': true,
   'prefer-const': true,
   'prefer-for-of': true,
-  'promise-function-async': true,
+  'promise-function-async': false,
   'quotemark': [
     true,
     'single'
