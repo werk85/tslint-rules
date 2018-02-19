@@ -38,7 +38,12 @@ export const rules = {
   'eofline': true,
   'file-header': [false],
   'forin': true,
-  'import-blacklist': [true, 'rxjs', 'lodash'],
+  'import-blacklist': [
+    true,
+    'lodash',
+    'rxjs',
+    'rxjs/operators'
+  ],
   'import-spacing': true,
   'indent': [true, 'spaces', 2],
   'interface-name': [
