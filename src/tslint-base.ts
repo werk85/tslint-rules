@@ -3,66 +3,41 @@ import * as path from 'path';
 const maxCyclomaticComplexity = 20;
 const maxLineLength = 130;
 
-export const rulesDirectory = [
-  path.join(path.dirname(require.resolve('tslint-eslint-rules')), 'dist/rules')
-];
+const xtends = ['tslint-config-prettier', 'tslint-plugin-prettier'];
+export { xtends as extends };
+
+export const rulesDirectory = [path.join(path.dirname(require.resolve('tslint-eslint-rules')), 'dist/rules')];
 
 export const rules = {
-  'align': [false],
-  'array-bracket-spacing': [
-    true,
-    'never'
-  ],
-  'array-type': [
-    true,
-    'array'
-  ],
-  'arrow-parens': true,
-  'ban': [],
+  align: [false],
+  'array-bracket-spacing': [true, 'never'],
+  'array-type': [true, 'generic'],
+  'arrow-parens': false,
+  ban: [],
   'binary-expression-operand-order': true,
-  'block-spacing': [
-    true,
-    'always'
-  ],
+  'block-spacing': [true, 'always'],
   'brace-style': false,
   'callable-types': true,
   'class-name': true,
   'comment-format': [false],
   'completed-docs': [false],
-  'curly': false,
-  'cyclomatic-complexity': [
-    true,
-    maxCyclomaticComplexity
-  ],
-  'encoding': true,
-  'eofline': true,
+  curly: false,
+  'cyclomatic-complexity': [true, maxCyclomaticComplexity],
+  encoding: true,
+  eofline: true,
   'file-header': [false],
-  'forin': true,
-  'import-blacklist': [
-    true,
-    'lodash',
-    'rxjs',
-    'rxjs/operators'
-  ],
+  forin: true,
+  'import-blacklist': false,
   'import-spacing': true,
-  'indent': [true, 'spaces', 2],
-  'interface-name': [
-    true,
-    'never-prefix'
-  ],
+  indent: [true, 'spaces', 2],
+  'interface-name': [true, 'never-prefix'],
   'interface-over-type-literal': true,
   'jsdoc-format': false,
   'label-position': true,
-  'linebreak-style': [
-    true,
-    'LF'
-  ],
+  'linebreak-style': [true, 'LF'],
   'max-classes-per-file': [false],
   'max-file-line-count': [false],
-  'max-line-length': [
-    true,
-    maxLineLength
-  ],
+  'max-line-length': [true, maxLineLength],
   'member-ordering': [
     true,
     {
@@ -74,10 +49,7 @@ export const rules = {
   'no-arg': true,
   'no-bitwise': true,
   'no-conditional-assignment': true,
-  'no-consecutive-blank-lines': [
-    true,
-    1
-  ],
+  'no-consecutive-blank-lines': [true, 1],
   'no-console': [false],
   'no-constant-condition': true,
   'no-construct': true,
@@ -96,10 +68,7 @@ export const rules = {
   'no-extra-semi': true,
   'no-for-in-array': true,
   'no-inferred-empty-object-type': false,
-  'no-inner-declarations': [
-    true,
-    'functions'
-  ],
+  'no-inner-declarations': [true, 'functions'],
   'no-invalid-regexp': true,
   'no-invalid-template-strings': true,
   'no-invalid-this': true,
@@ -132,53 +101,28 @@ export const rules = {
   'no-unexpected-multiline': true,
   'no-unsafe-finally': true,
   'no-unused-expression': true,
-  'no-unused-variable': true,
-  'no-use-before-declare': true,
+  'no-use-before-declare': false,
   'no-var-keyword': true,
   'no-var-requires': false,
   'no-void-expression': false,
   'number-literal-format': true,
-  'object-curly-spacing': [
-    true,
-    'always'
-  ],
-  'object-literal-key-quotes': [
-    true,
-    'consistent-as-needed'
-  ],
+  'object-curly-spacing': [true, 'always'],
+  'object-literal-key-quotes': [true, 'as-needed'],
   'object-literal-shorthand': true,
-  'object-literal-sort-keys': true,
-  'one-line': [
-    true,
-    'check-catch',
-    'check-else',
-    'check-finally',
-    'check-open-brace',
-    'check-whitespace'
-  ],
-  'one-variable-per-declaration': [
-    true,
-    'ignore-for-loop'
-  ],
-  'only-arrow-functions': [
-    true,
-    'allow-declarations'
-  ],
+  'object-literal-sort-keys': false,
+  'one-line': [true, 'check-catch', 'check-else', 'check-finally', 'check-open-brace', 'check-whitespace'],
+  'one-variable-per-declaration': [true, 'ignore-for-loop'],
+  'only-arrow-functions': [true, 'allow-declarations'],
   'ordered-imports': true,
   'prefer-conditional-expression': true,
   'prefer-const': true,
   'prefer-for-of': true,
+  prettier: true,
   'promise-function-async': false,
-  'quotemark': [
-    true,
-    'single'
-  ],
-  'radix': true,
+  quotemark: [true, 'single'],
+  radix: true,
   'restrict-plus-operands': false,
-  'semicolon': [
-    true,
-    'always'
-  ],
+  semicolon: [true, 'always'],
   'space-before-function-paren': [
     true,
     {
@@ -189,7 +133,7 @@ export const rules = {
     }
   ],
   'space-within-parens': 0,
-  'strict-boolean-expressions': false,
+  'strict-boolean-expressions': true,
   'switch-default': true,
   'ter-arrow-body-style': false,
   'ter-arrow-spacing': [true],
@@ -203,26 +147,20 @@ export const rules = {
     }
   ],
   'triple-equals': true,
-  'typedef': [
-    true,
-    'call-signature',
-    'parameter',
-    'property-declaration',
-    'member-variable-declaration'
-  ],
+  typedef: [true, 'call-signature', 'parameter', 'property-declaration', 'member-variable-declaration'],
   'typedef-whitespace': [
     true,
     {
       'call-signature': 'nospace',
       'index-signature': 'nospace',
-      'parameter': 'nospace',
+      parameter: 'nospace',
       'property-declaration': 'nospace',
       'variable-declaration': 'nospace'
     },
     {
       'call-signature': 'onespace',
       'index-signature': 'onespace',
-      'parameter': 'onespace',
+      parameter: 'onespace',
       'property-declaration': 'onespace',
       'variable-declaration': 'onespace'
     }
@@ -231,18 +169,6 @@ export const rules = {
   'use-isnan': true,
   'valid-jsdoc': false,
   'valid-typeof': true,
-  'variable-name': [
-    true,
-    'ban-keywords',
-    'check-format'
-  ],
-  'whitespace': [
-    true,
-    'check-branch',
-    'check-decl',
-    'check-operator',
-    'check-module',
-    'check-separator',
-    'check-type'
-  ]
+  'variable-name': false,
+  whitespace: [true, 'check-branch', 'check-decl', 'check-operator', 'check-module', 'check-separator', 'check-type']
 };
