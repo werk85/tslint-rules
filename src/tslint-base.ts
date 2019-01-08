@@ -133,7 +133,7 @@ export const rules = {
     }
   ],
   'space-within-parens': 0,
-  'strict-boolean-expressions': true,
+  'strict-boolean-expressions': false,
   'switch-default': true,
   'ter-arrow-body-style': false,
   'ter-arrow-spacing': [true],
