@@ -117,9 +117,19 @@ export const rules = {
   'prefer-conditional-expression': true,
   'prefer-const': true,
   'prefer-for-of': true,
-  prettier: true,
+  prettier: [
+    true,
+    {
+      bracketSpacing: true,
+      jsxBracketSameLine: true,
+      parser: 'typescript',
+      printWidth: 130,
+      semi: true,
+      singleQuote: true
+    }
+  ],
   'promise-function-async': false,
-  quotemark: [true, 'single'],
+  quotemark: false,
   radix: true,
   'restrict-plus-operands': false,
   semicolon: [true, 'always'],
