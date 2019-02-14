@@ -1,6 +1,6 @@
-# werk85-tslint-rules
+# werk85-tslint-rules [![CircleCI](https://circleci.com/gh/werk85/tslint-rules.svg?style=svg)](https://circleci.com/gh/werk85/tslint-rules)
 
-Organisation wide tslint rules for werk85.
+Organisation wide tslint rules for [werk85](https://www.werk85.de/).
 
 ## Installation
 
