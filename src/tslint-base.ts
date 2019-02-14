@@ -136,8 +136,9 @@ export const rules = {
   'space-before-function-paren': [
     true,
     {
-      anonymous: 'always',
+      anonymous: 'never',
       asyncArrow: 'always',
+      constructor: 'never',
       method: 'never',
       named: 'never'
     }
