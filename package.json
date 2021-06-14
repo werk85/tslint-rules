@@ -1,10 +1,9 @@
 {
   "name": "werk85-tslint-rules",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Organisation wide tslint rules for werk85",
   "main": "lib/tslint-base.js",
   "scripts": {
-    "preinstall": "npx use-yarn",
     "start": "tsc",
     "prepublish": "tsc",
     "lint": "tsc && tslint --project tsconfig.json --format stylish"
